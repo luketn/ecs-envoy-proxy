@@ -1,1 +1,3 @@
-
+FROM envoyproxy/envoy-dev:35d18c932a325bf62a67b2d95021a18e0e32d167
+COPY envoy.yaml /etc/envoy/envoy.yaml
+RUN chmod go+r /etc/envoy/envoy.yaml
